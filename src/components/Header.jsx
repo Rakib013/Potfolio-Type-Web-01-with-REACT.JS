@@ -160,10 +160,6 @@ const Menu = styled.div`
                 color: var(--first-color);
             }
 
-            @media screen and (max-width: 800px){
-                font-size: 1rem;
-            }
-
             @media screen and (max-width: 600px){
                 display: flex;
                 flex-direction: column;
