@@ -41,7 +41,12 @@
   },
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
   "main": "index.js",
-  "devDependencies": {},
+  "devDependencies": {
+    "stylelint": "^14.1.0",
+    "stylelint-config-recommended": "^6.0.0",
+    "stylelint-config-styled-components": "^0.1.1",
+    "stylelint-processor-styled-components": "^1.10.0"
+  },
   "author": "",
   "license": "ISC"
 }
