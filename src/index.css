@@ -100,3 +100,16 @@ h1, h2, h3, h4{
   color: var(--title-color);
   font-weight: var(--font-semi-bold);
 }
+
+ul{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+img{
+  width: 100%;
+  height: auto;
+}
