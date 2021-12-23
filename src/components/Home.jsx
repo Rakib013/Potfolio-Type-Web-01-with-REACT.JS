@@ -71,16 +71,21 @@ const Container = styled.div`
     margin: 0 var(--mb-1-5) 0 var(--mb-1-5);
     padding: 6rem 0 4rem;
 
-    @media screen and (max-width: 600px){
+    @media screen and (max-width: 800px){
+        padding: 4rem 0 2rem;
     }
 `
 
 const Content = styled.div`
     display: grid;
-    padding: 5.5rem;
+    padding: 5rem 10rem 5rem 10rem;
     grid-template-columns: max-content 1fr 1fr;
     column-gap: 2rem;
     align-items: center;
+
+    @media screen and (max-width: 900px){
+        padding: 4rem 2rem 2rem 2rem;
+    }
 
     @media screen and (max-width: 600px){
         padding: 0;
