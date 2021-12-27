@@ -15,7 +15,7 @@ function Skills() {
                                 <h1>Frontend Developer</h1>
                                 <span>More than 2 Years</span>
                             </div>
-                            <i class="uil uil-angle-down skills__arrow"></i>
+                            <i  class="uil uil-angle-down skills__arrow"></i>
                         </Head>
                         <List>
                             <Data>
@@ -38,7 +38,7 @@ function Skills() {
                             </div>
                             <i class="uil uil-angle-down skills__arrow"></i>
                         </Head>
-                        <List>
+                        {/* <List>
                             <Data>
                                 <div>
                                     <h3>HTML</h3>
@@ -48,7 +48,7 @@ function Skills() {
                                     <Percent></Percent>
                                 </Bar>
                             </Data>
-                        </List>
+                        </List> */}
                     </div>
                     <div>
                         <Head>
@@ -59,7 +59,7 @@ function Skills() {
                             </div>
                             <i class="uil uil-angle-down skills__arrow"></i>
                         </Head>
-                        <List>
+                        {/* <List>
                             <Data>
                                 <div>
                                     <h3>HTML</h3>
@@ -69,7 +69,7 @@ function Skills() {
                                     <Percent></Percent>
                                 </Bar>
                             </Data>
-                        </List>
+                        </List> */}
                     </div>
                     <div>
                         <Head>
@@ -80,7 +80,7 @@ function Skills() {
                             </div>
                             <i class="uil uil-angle-down skills__arrow"></i>
                         </Head>
-                        <List>
+                        {/* <List>
                             <Data>
                                 <div>
                                     <h3>HTML</h3>
@@ -90,7 +90,7 @@ function Skills() {
                                     <Percent></Percent>
                                 </Bar>
                             </Data>
-                        </List>
+                        </List> */}
                     </div>
                 </Content>
             </Container>
@@ -103,6 +103,10 @@ export default Skills;
 const Container = styled.div`
     margin: 0 var(--mb-1-5) 0 var(--mb-1-5);
     padding: 6rem 0 2rem;
+
+    @media screen and (max-width: 700px){
+        padding: 4rem 0 2rem;
+    }
 `
 
 const Title = styled.div`
@@ -122,19 +126,65 @@ const Subtitle = styled.div`
     }
 `
 
-const Content = styled.div``
+const Content = styled.div`
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+    padding: 5rem 7rem 5rem 7rem;
+
+    @media screen and (max-width: 900px){
+        padding: 3rem 1rem 3rem 1rem;
+    }
+
+    @media screen and (max-width: 600px){
+        grid-template-columns: 1fr;
+        padding: 0;
+    }
+
+    &>div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+`
 
 const Head = styled.div`
     display: flex;
     align-items: center;
+    margin-bottom: var(--mb-2-5);
+    cursor: pointer;
+
+    &>i:nth-child(1){
+        margin-right: var(--mb-1-5);
+        font-size: 2rem;
+        color: var(--first-color);
+    }
+
+    &>i:nth-child(3){
+        margin-left: auto;
+        font-size: 2rem;
+        color: var(--first-color);
+    }
+
+    &>div{
+        &>h1{
+            font-size: var(--h3-font-size);
+        }
+        &>span{
+            font-size: var(--small-font-size);
+            color: var(--text-color-light);
+        }
+    }
 `
+
+
 
 const List = styled.div``
 
 const Data = styled.div`
     &>div{
         display: flex;
-        justify-content: space-between;
+        /* justify-content: space-between; */
         align-items: center;
     }
 `
