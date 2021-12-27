@@ -59,7 +59,6 @@ const Title = styled.div`
 const SubTitle = styled.div`
     display: block;
     font-size: var(--small-font-size);
-    /* margin-bottom: var(--mb-3); */
     margin-bottom: 4rem;
     text-align: center;
 
