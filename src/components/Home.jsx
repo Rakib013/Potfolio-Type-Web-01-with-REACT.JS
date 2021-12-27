@@ -111,7 +111,10 @@ const IMG = styled.div`
     order: 1;
     margin-left: auto;
     &>svg{
-        width: 270px;
+        width: 350px;
+        @media screen and (max-width: 1000px){
+            width: 270px;
+        }
         @media screen and (max-width: 800px){
             width: 200px;
         }
