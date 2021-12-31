@@ -1,7 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 
 function Skills() {
+    const [skills1, setSkills1] = useState(false);
+    const [skills2, setSkills2] = useState(false);
+    const [skills3, setSkills3] = useState(false);
+    const [skills4, setSkills4] = useState(false);
     return (
         <>
             <Container>
@@ -9,7 +13,7 @@ function Skills() {
                 <Subtitle>My Technical Level</Subtitle>
                 <Content>
                     <div>
-                        <Head>
+                        <Head onClick={e => setSkills1(!skills1)}>
                             <i class="uil uil-brackets-curly skills__icon"></i>
                             <div>
                                 <h1>Frontend Developer</h1>
@@ -17,20 +21,42 @@ function Skills() {
                             </div>
                             <i  class="uil uil-angle-down skills__arrow"></i>
                         </Head>
-                        <List>
-                            <Data>
-                                <div>
-                                    <h3>HTML</h3>
-                                    <span>90%</span>
-                                </div>
-                                <Bar>
-                                    <Percent></Percent>
-                                </Bar>
-                            </Data>
-                        </List>
+                        {skills1 && (
+                            <List>
+                                <Data>
+                                    <div>
+                                        <h3>HTML</h3>
+                                        <span>99%</span>
+                                    </div>
+                                    <Bar>
+                                    <Percent style={{width: "99%"}}></Percent>
+                                    </Bar>
+                                </Data>
+
+                                <Data>
+                                    <div>
+                                        <h3>CSS</h3>
+                                        <span>93%</span>
+                                    </div>
+                                    <Bar>
+                                        <Percent style={{width: "93%"}}></Percent>
+                                    </Bar>
+                                </Data>
+
+                                <Data>
+                                    <div>
+                                        <h3>JavaScript</h3>
+                                        <span>97%</span>
+                                    </div>
+                                    <Bar>
+                                    <Percent style={{width: "97%"}}></Percent>
+                                    </Bar>
+                                </Data>
+                            </List>
+                        )}  
                     </div>
                     <div>
-                        <Head>
+                        <Head onClick={e => setSkills2(!skills2)}>
                         <i class="uil uil-server-network skills__icon"></i>
                             <div>
                                 <h1>Backend Developer</h1>
@@ -38,20 +64,42 @@ function Skills() {
                             </div>
                             <i class="uil uil-angle-down skills__arrow"></i>
                         </Head>
-                        {/* <List>
-                            <Data>
-                                <div>
-                                    <h3>HTML</h3>
-                                    <span>90%</span>
-                                </div>
-                                <Bar>
-                                    <Percent></Percent>
-                                </Bar>
-                            </Data>
-                        </List> */}
+                        {skills2 && (
+                            <List>
+                                <Data>
+                                    <div>
+                                        <h3>PYTHON</h3>
+                                        <span>95%</span>
+                                    </div>
+                                    <Bar>
+                                    <Percent style={{width: "95%"}}></Percent>
+                                    </Bar>
+                                </Data>
+
+                                <Data>
+                                    <div>
+                                        <h3>JavaScript</h3>
+                                        <span>93%</span>
+                                    </div>
+                                    <Bar>
+                                        <Percent style={{width: "93%"}}></Percent>
+                                    </Bar>
+                                </Data>
+
+                                <Data>
+                                    <div>
+                                        <h3>DJANGO</h3>
+                                        <span>90%</span>
+                                    </div>
+                                    <Bar>
+                                    <Percent style={{width: "90%"}}></Percent>
+                                    </Bar>
+                                </Data>
+                            </List>
+                        )}
                     </div>
                     <div>
-                        <Head>
+                        <Head onClick={e => setSkills3(!skills3)}>
                             <i class="uil uil-swatchbook skills__icon"></i>
                             <div>
                                 <h1>Data Scientist</h1>
@@ -59,20 +107,42 @@ function Skills() {
                             </div>
                             <i class="uil uil-angle-down skills__arrow"></i>
                         </Head>
-                        {/* <List>
-                            <Data>
-                                <div>
-                                    <h3>HTML</h3>
-                                    <span>90%</span>
-                                </div>
-                                <Bar>
-                                    <Percent></Percent>
-                                </Bar>
-                            </Data>
-                        </List> */}
+                        {skills3 && (
+                            <List>
+                                <Data>
+                                    <div>
+                                        <h3>PYTHON</h3>
+                                        <span>99%</span>
+                                    </div>
+                                    <Bar>
+                                    <Percent style={{width: "99%"}}></Percent>
+                                    </Bar>
+                                </Data>
+
+                                <Data>
+                                    <div>
+                                        <h3>NUMPY</h3>
+                                        <span>93%</span>
+                                    </div>
+                                    <Bar>
+                                        <Percent style={{width: "93%"}}></Percent>
+                                    </Bar>
+                                </Data>
+
+                                <Data>
+                                    <div>
+                                        <h3>PANDAS</h3>
+                                        <span>97%</span>
+                                    </div>
+                                    <Bar>
+                                    <Percent style={{width: "97%"}}></Percent>
+                                    </Bar>
+                                </Data>
+                            </List>
+                        )}
                     </div>
                     <div>
-                        <Head>
+                        <Head onClick={e => setSkills4(!skills4)}>
                         <i class="uil uil-android"></i>
                             <div>
                                 <h1>Android Developer</h1>
@@ -80,17 +150,39 @@ function Skills() {
                             </div>
                             <i class="uil uil-angle-down skills__arrow"></i>
                         </Head>
-                        {/* <List>
-                            <Data>
-                                <div>
-                                    <h3>HTML</h3>
-                                    <span>90%</span>
-                                </div>
-                                <Bar>
-                                    <Percent></Percent>
-                                </Bar>
-                            </Data>
-                        </List> */}
+                        {skills4 && (
+                            <List>
+                                <Data>
+                                    <div>
+                                        <h3>Java</h3>
+                                        <span>85%</span>
+                                    </div>
+                                    <Bar>
+                                    <Percent style={{width: "85%"}}></Percent>
+                                    </Bar>
+                                </Data>
+
+                                <Data>
+                                    <div>
+                                        <h3>Kotlin</h3>
+                                        <span>5%</span>
+                                    </div>
+                                    <Bar>
+                                        <Percent style={{width: "5%"}}></Percent>
+                                    </Bar>
+                                </Data>
+
+                                <Data>
+                                    <div>
+                                        <h3>Android Studio</h3>
+                                        <span>97%</span>
+                                    </div>
+                                    <Bar>
+                                    <Percent style={{width: "97%"}}></Percent>
+                                    </Bar>
+                                </Data>
+                            </List>
+                        )}
                     </div>
                 </Content>
             </Container>
@@ -140,12 +232,6 @@ const Content = styled.div`
         grid-template-columns: 1fr;
         padding: 0;
     }
-
-    &>div{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
 `
 
 const Head = styled.div`
@@ -179,16 +265,32 @@ const Head = styled.div`
 
 
 
-const List = styled.div``
+const List = styled.div`
+    margin: 0 2rem 2rem 2rem;
+`
 
 const Data = styled.div`
     &>div{
         display: flex;
-        /* justify-content: space-between; */
-        align-items: center;
+        justify-content: space-between;
+
+        &>h3{
+            font-size: var(--normal-font-size);
+            font-weight: var(--font-medium);
+        }
     }
 `
 
-const Bar = styled.div``
+const Bar = styled.div`
+    background-color: var(--first-color-lighter);
+    width: 100%;
+    height: 0.3rem;
+    border-radius: 20px;
+    margin-bottom: 1.5rem;
+`
 
-const Percent = styled.span``
+const Percent = styled.span`
+    width: 80%;
+    background-color: var(--first-color);
+    border-radius: 20px;
+`
