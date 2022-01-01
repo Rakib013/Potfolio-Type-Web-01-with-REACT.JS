@@ -48,12 +48,20 @@ export default About;
 const Container = styled.div`
     margin: 0 var(--mb-1-5) 0 var(--mb-1-5);
     padding: 6rem 0 2rem;
+
+    @media screen and (max-width: 768px) {
+        padding: 4rem 0 2rem;
+    }
 `
 
 const Title = styled.div`
     color: var(--title-color);
-    font-size: var(--h1-font-size);
+    font-size: var(--big-font-size);
     text-align: center;
+
+    @media screen and (max-width: 768px){
+        font-size: var(--h1-font-size);
+    }
 `
 
 const SubTitle = styled.div`
@@ -156,7 +164,7 @@ const Button = styled.div`
         cursor: pointer;
         background-color: var(--first-color-alt);
         &>i{
-            color: #ff00d4;
+            color: #fff;
         }
     }
 
