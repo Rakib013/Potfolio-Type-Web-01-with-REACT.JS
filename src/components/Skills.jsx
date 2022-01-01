@@ -19,7 +19,7 @@ function Skills() {
                                 <h1>Frontend Developer</h1>
                                 <span>More than 2 Years</span>
                             </div>
-                            <i  class="uil uil-angle-down skills__arrow"></i>
+                            <i style={{transform: skills1? "rotate(180deg)" : "None"}} class="uil uil-angle-down skills__arrow"></i>
                         </Head>
                         {skills1 && (
                             <List>
@@ -62,7 +62,7 @@ function Skills() {
                                 <h1>Backend Developer</h1>
                                 <span>More than 2 Years</span>
                             </div>
-                            <i class="uil uil-angle-down skills__arrow"></i>
+                            <i style={{transform: skills2? "rotate(180deg)" : "None"}} class="uil uil-angle-down skills__arrow"></i>
                         </Head>
                         {skills2 && (
                             <List>
@@ -105,7 +105,7 @@ function Skills() {
                                 <h1>Data Scientist</h1>
                                 <span>More than 2 Years</span>
                             </div>
-                            <i class="uil uil-angle-down skills__arrow"></i>
+                            <i style={{transform: skills3? "rotate(180deg)" : "None"}} class="uil uil-angle-down skills__arrow"></i>
                         </Head>
                         {skills3 && (
                             <List>
@@ -148,7 +148,7 @@ function Skills() {
                                 <h1>Android Developer</h1>
                                 <span>More than 2 Years</span>
                             </div>
-                            <i class="uil uil-angle-down skills__arrow"></i>
+                            <i style={{transform: skills4? "rotate(180deg)" : "None"}} class="uil uil-angle-down skills__arrow"></i>
                         </Head>
                         {skills4 && (
                             <List>
@@ -250,6 +250,7 @@ const Head = styled.div`
         margin-left: auto;
         font-size: 2rem;
         color: var(--first-color);
+        transition: 0.5s;
     }
 
     &>div{
