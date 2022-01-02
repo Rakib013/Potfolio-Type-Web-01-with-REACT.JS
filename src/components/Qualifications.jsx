@@ -237,8 +237,12 @@ const Head = styled.div`
 
 const Section = styled.div`
     display: grid;
-    grid-template-columns: .6fr;
+    grid-template-columns: .5fr;
     justify-content: center;
+
+    @media screen and (max-width: 768px) {
+        grid-template-columns: .9fr;
+    }
 `
 
 
@@ -250,7 +254,6 @@ const Data = styled.div`
     display: grid;
     grid-template-columns: 1fr max-content 1fr;
     column-gap: 1.5rem;
-    /* gap: .5rem; */
 
     &>div:nth-child(1){
         &>h3{
@@ -278,6 +281,23 @@ const Data = styled.div`
 `
 
 
-const Round = styled.span``
+const Round = styled.span`
+    display: inline-block;
+    background-color: var(--first-color);
+    height: 13px;
+    width: 13px;
+    border-radius: 50%;
+    margin-right: 2rem;
 
-const Line = styled.span``
+    @media screen and (max-width: 768px) {
+        margin-right: 1rem;
+    }
+`
+
+const Line = styled.span`
+    display: block;
+    background-color: var(--first-color);
+    width: 1px;
+    height: 100%;
+    transform: translate(6px, -7px);
+`
