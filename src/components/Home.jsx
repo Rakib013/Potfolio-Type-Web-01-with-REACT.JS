@@ -171,12 +171,13 @@ const Button = styled.button`
     }
 
     @media screen and (max-width: 600px){
-        width: 30%;
+        width: 70%;
     }
 `
 
 const Scroll = styled.div`
     padding: 0 5.5rem 2rem 8.5rem;
+    
     &>a{
         display: flex;
         align-items: center;
@@ -195,6 +196,7 @@ const Scroll = styled.div`
         cursor: pointer;
         transform: translateY(.25rem);
     }
+
     }
     @media screen and (max-width: 600px){
         display: none;

@@ -201,7 +201,7 @@ const Container = styled.div`
     }
 `
 
-const Title = styled.div`
+const Title = styled.h1`
     text-align: center;
     font-size: var(--h1-font-size);
     color: var(--title-color);

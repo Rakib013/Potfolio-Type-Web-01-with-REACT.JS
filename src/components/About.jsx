@@ -54,14 +54,11 @@ const Container = styled.div`
     }
 `
 
-const Title = styled.div`
-    color: var(--title-color);
-    font-size: var(--big-font-size);
+const Title = styled.h1`
     text-align: center;
+    color: var(--title-color);
 
-    @media screen and (max-width: 768px){
-        font-size: var(--h1-font-size);
-    }
+    font-size: var(--h1-font-size);
 `
 
 const SubTitle = styled.div`
