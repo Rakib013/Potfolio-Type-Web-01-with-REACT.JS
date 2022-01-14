@@ -22,11 +22,11 @@ function Portfolio() {
                         modules={[Navigation, Pagination, Scrollbar, A11y]}
                         spaceBetween={50}
                         slidesPerView={1}
-                        navigation
+                        cssMode
+                        loop
                         pagination={{ clickable: true }}
-                        onSlideChange={() => console.log('slide change')}
-                        onSwiper={(swiper) => console.log(swiper)}
-                        >
+                    >
+                        
                         <SwiperSlide>
                             <Slide>
                                 <img src={image1} alt="portfolio1" />
@@ -63,6 +63,7 @@ function Portfolio() {
                                 </Data>
                             </Slide>
                         </SwiperSlide>
+                        
                     </Swiper>
                 </Content>
             </Container>
