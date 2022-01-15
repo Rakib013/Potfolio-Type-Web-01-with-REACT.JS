@@ -5,7 +5,7 @@ import image from '../img/profile.jpg';
 function About() {
     return (
         <>
-            <Container>
+            <Container id="about">
                 <Title>About</Title>
                 <SubTitle>My Introduction</SubTitle>
                 <Content>
@@ -157,11 +157,17 @@ const Button = styled.div`
     width: 180px;
     text-align: center;
 
+    &>i{
+        display: inline-block;
+        transition: 0.4s;
+    }
+
     &:hover{
         cursor: pointer;
         background-color: var(--first-color-alt);
         &>i{
             color: #fff;
+            transform: translateY(.25rem);
         }
     }
 

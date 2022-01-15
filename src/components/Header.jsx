@@ -11,22 +11,22 @@ function Header() {
                     <Menu open={isOpen ? true : false}>
                         <ul>
                             <li>
-                                <i class="uil uil-estate nav__icon"></i>Home
+                                <a href="#home"><i class="uil uil-estate nav__icon"></i>Home</a>
                             </li>
                             <li>
-                                <i class="uil uil-user nav__icon"></i>About
+                                <a href="#about"><i class="uil uil-user nav__icon"></i>About</a>
                             </li>
                             <li>
-                                <i class="uil uil-file-alt nav__icon"></i>Skills
+                                <a href="#skills"><i class="uil uil-file-alt nav__icon"></i>Skills</a>
                             </li>
                             <li>
-                                <i class="uil uil-briefcase-alt nav__icon"></i>Services
+                                <a href="#services"><i class="uil uil-briefcase-alt nav__icon"></i>Services</a>
                             </li>
                             <li>
-                                <i class="uil uil-scenery nav__icon"></i>Portfolio
+                                <a href="#portfolio"><i class="uil uil-scenery nav__icon"></i>Portfolio</a>
                             </li>
                             <li>
-                                <i class="uil uil-message nav__icon"></i>Contact Me
+                                <a href="#contact"><i class="uil uil-message nav__icon"></i>Contact Me</a>
                             </li>
                         </ul>
                         <AppClose onClick={e => setIsOpen(!isOpen)} close={isOpen ? true : false}><i class="uil uil-times"></i></AppClose>
@@ -147,13 +147,19 @@ const Menu = styled.div`
         list-style: none;
 
         &>li{
-            margin: 0 10px;
-            cursor: pointer;
-            color: var(--title-color);
-            transition: 0.2s;
-            font-size: var(--small-font-size);
-            &>i{
-                display: none;
+            &>a{
+                margin: 0 10px;
+                cursor: pointer;
+                color: var(--title-color);
+                transition: 0.2s;
+                font-size: var(--small-font-size);
+                color: var(--title-color);
+                &>i{
+                    display: none;
+                }
+                &:hover{
+                    color: var(--first-color);
+                }
             }
 
             &:hover{
@@ -161,11 +167,17 @@ const Menu = styled.div`
             }
 
             @media screen and (max-width: 600px){
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                &>i{
-                    display: inline-block;
+                &>a{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    &>i{
+                        display: inline-block;
+                    }
+
+                    &:hover{
+                        color: var(--first-color);
+                    }
                 }
             }
         }

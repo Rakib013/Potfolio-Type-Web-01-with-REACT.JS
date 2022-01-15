@@ -24,8 +24,9 @@ function Project() {
 export default Project;
 
 const Container = styled.div`
-    padding: 5rem 8rem;
-    @media screen and (max-width: 900px) {
+    padding: 5rem 18rem;
+    
+    @media screen and (max-width: 1100px) {
         padding: 3rem 1rem;
     }
 `
