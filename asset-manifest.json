@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/Potfolio-Type-Web-01-with-REACT.JS/static/css/main.f4c58459.css",
+    "main.js": "/Potfolio-Type-Web-01-with-REACT.JS/static/js/main.82fecab1.js",
+    "static/media/0.png": "/Potfolio-Type-Web-01-with-REACT.JS/static/media/0.0f62473f3a6e60408b8c.png",
+    "static/media/profile.jpg": "/Potfolio-Type-Web-01-with-REACT.JS/static/media/profile.b9a128311525f85ffef3.jpg",
+    "static/media/testimonial4.jpg": "/Potfolio-Type-Web-01-with-REACT.JS/static/media/testimonial4.e253384743219c08a2e4.jpg",
+    "static/media/portfolio3.jpg": "/Potfolio-Type-Web-01-with-REACT.JS/static/media/portfolio3.f0e7fa8280d9df023e12.jpg",
+    "static/media/portfolio1.jpg": "/Potfolio-Type-Web-01-with-REACT.JS/static/media/portfolio1.b100f823e1d9a2e55cca.jpg",
+    "static/media/testimonial3.jpg": "/Potfolio-Type-Web-01-with-REACT.JS/static/media/testimonial3.0fdabd61adfa88451208.jpg",
+    "index.html": "/Potfolio-Type-Web-01-with-REACT.JS/index.html",
+    "main.f4c58459.css.map": "/Potfolio-Type-Web-01-with-REACT.JS/static/css/main.f4c58459.css.map",
+    "main.82fecab1.js.map": "/Potfolio-Type-Web-01-with-REACT.JS/static/js/main.82fecab1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f4c58459.css",
+    "static/js/main.82fecab1.js"
+  ]
+}
