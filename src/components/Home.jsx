@@ -5,7 +5,7 @@ import image from '../img/0.png';
 function Home() {
     return (
         <>
-            <Container>
+            <Container id="home">
                 <Content>
                     <Socials>
                         <Social>
@@ -161,9 +161,18 @@ const Button = styled.button`
     transition: 0.3s;
     font-size: 1rem;
 
+    &>i{
+        display: inline-block;
+        transition: 0.4s;
+    }
+
     &:hover{
         cursor: pointer;
         background-color: var(--first-color-alt);
+
+        &>i{
+            transform: translateX(0.25rem);
+        }
     }
 
     @media screen and (max-width: 800px){
@@ -177,8 +186,9 @@ const Button = styled.button`
 
 const Scroll = styled.div`
     padding: 0 5.5rem 2rem 8.5rem;
-    
+
     &>a{
+        transition: 0.4s;
         display: flex;
         align-items: center;
         font-size: var(--h4-font-size);
@@ -193,9 +203,9 @@ const Scroll = styled.div`
         }
 
         &:hover{
-        cursor: pointer;
-        transform: translateY(.25rem);
-    }
+            cursor: pointer;
+            transform: translateY(.25rem);
+        }
 
     }
     @media screen and (max-width: 600px){

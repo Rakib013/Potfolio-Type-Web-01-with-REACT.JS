@@ -8,7 +8,7 @@ function Skills() {
     const [skills4, setSkills4] = useState(false);
     return (
         <>
-            <Container>
+            <Container id="skills">
                 <Title>Skills</Title>
                 <Subtitle>My Technical Level</Subtitle>
                 <Content>

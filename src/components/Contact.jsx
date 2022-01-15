@@ -4,7 +4,7 @@ import styled from 'styled-components'
 function Contact() {
     return (
         <>
-            <Container>
+            <Container id="contact">
                 <Title> Contact Me </Title>
                 <SubTitle>Get in touch</SubTitle>
 
@@ -54,6 +54,9 @@ function Contact() {
                             <label htmlFor="">Message</label>
                             <textarea name="" id="" cols="0" rows="8"></textarea>
                         </div>
+                        <button>
+                            Submit <i class="uil uil-arrow-right button__icon"></i>
+                        </button>
                     </Input>
                 </Content>
             </Container>
@@ -163,5 +166,29 @@ const Input = styled.div`
 
     @media screen and (max-width: 768px) {
         order: 1;
+    }
+
+    &>button{
+        background-color: var(--first-color);
+        color: #fff;
+        padding: 0.8rem 2rem;
+        border: none;
+        font-size: 1.02rem;
+        border-radius: 5px;
+        cursor: pointer;
+        display: flex;
+        margin-bottom: 20px;
+
+        &>i{
+            display: inline-block;
+            font-size: 1.02rem;
+            transition: 0.4s;
+        }
+
+        &:hover{
+            &>i{
+                transform: translateX(.25rem);
+            }
+        }
     }
 `
